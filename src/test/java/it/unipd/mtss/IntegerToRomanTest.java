@@ -29,5 +29,19 @@ public class IntegerToRomanTest {
         assertEquals(variabileFourtyNine, IntegerToRoman.convert(49));
         assertEquals(variabileFifty, IntegerToRoman.convert(50));
     }
+    @Test
+    public void evalutePrimiCento(){
+        assertEquals("LI", IntegerToRoman.convert(51));
+        assertEquals("LV", IntegerToRoman.convert(55));
+        assertEquals("LXII", IntegerToRoman.convert(62));
+        assertEquals("LXVII", IntegerToRoman.convert(67));
+        assertEquals("LXXIII", IntegerToRoman.convert(73));
+        assertEquals("LXXVI", IntegerToRoman.convert(76));
+        assertEquals("LXXXIV", IntegerToRoman.convert(84));
+        assertEquals("LXXXVIII", IntegerToRoman.convert(88));
+        assertEquals("XC", IntegerToRoman.convert(90));
+        assertEquals("XCIX", IntegerToRoman.convert(99));
+        assertEquals("C", IntegerToRoman.convert(100));
+    }
 
 }
