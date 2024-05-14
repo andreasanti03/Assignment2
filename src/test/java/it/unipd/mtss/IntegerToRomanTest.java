@@ -19,4 +19,14 @@ public class IntegerToRomanTest {
         assertEquals(variabileTwo, IntegerToRoman.convert(2));
         assertEquals(variabileThree, IntegerToRoman.convert(3));
     }
+
+    @Test
+    public void evalutePrimiSei(){
+        String variabileFour = "IV";
+        String variabileFive = "V";
+        String variabileSix = "VI";
+        assertEquals(variabileFour, IntegerToRoman.convert(4));
+        assertEquals(variabileFive, IntegerToRoman.convert(5));
+        assertEquals(variabileSix, IntegerToRoman.convert(6));
+    }
 }
