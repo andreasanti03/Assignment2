@@ -6,9 +6,17 @@
         <module name="BooleanExpressionComplexity"/> <!-- Controllo massimo 3 (default val) operazioni booleane per espressione -->
         <module name="CyclomaticComplexity"/> <!-- Controllo massimo 10 (default val) possibili operazioni -->
         <module name="MethodLength"/> <!-- Massimo 150 (default val) linee per metodo -->
+        <module name="EmptyCatchBlock"/> <!-- Controlla che nei 'try catch' il 'catch' non sia vuoto  -->
+        <module name="AvoidStarImport"/> <!-- Controlla che gli import non usino la '* notation' -->
+        <module name="IllegalImport"/> <!-- Controlla che non vi siano import di 'illegal packages' -->
+        <module name="NeedBraces"/> <!-- Controllo delle '{ }' per i blocchi di codice -->
     </module>
     <module name="FileLength"/> <!-- Massimo 2000 (default val) linee per file -->
     <module name="LineLength"><!-- Controllo massimo 120 (moficato valore 80 previsto per default) caratteri per linea -->
         <property name="max" value="120"/>
+    </module>
+    <module name="FileTabCharacter"/> <!-- Controlla che non ci sia ('\t') carattere di tab -->
+    <module name="Header"> <!-- Controllo presenza header, definito da un file esterno, in ogni file -->
+        <property name="headerFile" value="utility/header.txt"/>
     </module>
 </module>
