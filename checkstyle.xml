@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN"
+        "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+<module name="Checker">
+    <module name="TreeWalker">
+        <module name="BooleanExpressionComplexity"/> <!-- Controllo massimo 3 (default val) operazioni booleane per espressione -->
+        <module name="CyclomaticComplexity"/> <!-- Controllo massimo 10 (default val) possibili operazioni -->
+        <module name="MethodLength"/> <!-- Massimo 150 (default val) linee per metodo -->
+    </module>
+    <module name="FileLength"/> <!-- Massimo 2000 (default val) linee per file -->
+    <module name="LineLength"><!-- Controllo massimo 120 (moficato valore 80 previsto per default) caratteri per linea -->
+        <property name="max" value="120"/>
+    </module>
+</module>
