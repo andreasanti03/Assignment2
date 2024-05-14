@@ -10,6 +10,10 @@ public class IntegerToRoman {
         String[] decine = {"","X","XX"};
         String[] unita = {"","I","II","III","IV","V","VI","VII","VIII","IX"};
 
+        if(number<0 || number>1000){
+            return  "";
+        }
+
         char[] input = String.valueOf(number).toCharArray();
 
         int posdecine = -1;
