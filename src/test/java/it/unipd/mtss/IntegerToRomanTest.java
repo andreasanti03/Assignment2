@@ -41,4 +41,20 @@ public class IntegerToRomanTest {
         assertEquals(variabileNine, IntegerToRoman.convert(9));
         assertEquals(variabileTen, IntegerToRoman.convert(10));
     }
+
+    @Test
+    public void evalutePrimiVenti(){
+        String variabileEleven = "XI";
+        String variabileFourteen = "XIV";
+        String variabileFifteen = "XV";
+        String variabileSixteen = "XVI";
+        String variabileNineteen = "XIX";
+        String variabileTwenty = "XX";
+        assertEquals(variabileEleven, IntegerToRoman.convert(11));
+        assertEquals(variabileFourteen, IntegerToRoman.convert(14));
+        assertEquals(variabileFifteen, IntegerToRoman.convert(15));
+        assertEquals(variabileSixteen, IntegerToRoman.convert(16));
+        assertEquals(variabileNineteen, IntegerToRoman.convert(19));
+        assertEquals(variabileTwenty, IntegerToRoman.convert(20));
+    }
 }

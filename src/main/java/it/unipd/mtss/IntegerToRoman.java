@@ -7,26 +7,26 @@ package it.unipd.mtss;
 
 public class IntegerToRoman {
     public static String convert(int number) {
-        if(number == 1){
-            return "I";
-        }else if(number == 2){
-            return "II";
-        }else if(number == 3) {
-            return "III";
-        }else if (number == 4) {
-            return "IV";
-        }else if (number == 5) {
-            return "V";
-        }else if (number == 6) {
-            return "VI";
-        }else if (number == 7) {
-            return "VII";
-        }else if (number == 8) {
-            return "VIII";
-        }else if (number == 9) {
-            return "IX";
-        }else {
-            return "X";
+        String[] decine = {"","X","XX"};
+        String[] unita = {"","I","II","III","IV","V","VI","VII","VIII","IX"};
+
+        char[] input = String.valueOf(number).toCharArray();
+
+        int posdecine = -1;
+        int posunita = -1;
+
+        if(input.length==2){
+            posdecine = input[0] - '0';
+            posunita = input[1] - '0';
+        }else if(input.length==1){
+            posunita = input[0] - '0';
+        }
+
+        if(posdecine!=-1){
+            return decine[posdecine]+unita[posunita];
+        }
+        else{
+            return unita[posunita];
         }
     }
 }
