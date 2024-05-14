@@ -55,4 +55,22 @@ public class IntegerToRomanTest {
         assertEquals("D", IntegerToRoman.convert(500));
     }
 
+    @Test
+    public void evaluatePrimiMille(){
+        assertEquals("DI", IntegerToRoman.convert(501));
+        assertEquals("DXXV", IntegerToRoman.convert(525));
+        assertEquals("DXCIX", IntegerToRoman.convert(599));
+        assertEquals("DCXXXIV", IntegerToRoman.convert(634));
+        assertEquals("DCLXXIII", IntegerToRoman.convert(673));
+        assertEquals("DCXLVI", IntegerToRoman.convert(646));
+        assertEquals("DCCLXXVII", IntegerToRoman.convert(777));
+        assertEquals("DCCLXXXV", IntegerToRoman.convert(785));
+        assertEquals("DCCCXVI", IntegerToRoman.convert(816));
+        assertEquals("DCCCLXXXVIII", IntegerToRoman.convert(888));
+        assertEquals("CML", IntegerToRoman.convert(950));
+        assertEquals("CMXCIX", IntegerToRoman.convert(999));
+        assertEquals("M", IntegerToRoman.convert(1000));
+    }
+
+
 }

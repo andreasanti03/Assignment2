@@ -8,9 +8,13 @@ package it.unipd.mtss;
 public class IntegerToRoman {
     public static String convert(int number) {
 
-        String[] centinaia = {"","C","CC","CCC","CD","D"};
+        String[] centinaia = {"","C","CC","CCC","CD","D","DC","DCC","DCCC","CM"};
         String[] decine = {"","X","XX","XXX","XL","L","LX","LXX","LXXX","XC"};
         String[] unita = {"","I","II","III","IV","V","VI","VII","VIII","IX"};
+
+        if(number==1000){
+            return "M";
+        }
 
 
         char[] input = String.valueOf(number).toCharArray();
