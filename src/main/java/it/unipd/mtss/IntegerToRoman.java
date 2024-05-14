@@ -8,8 +8,8 @@ package it.unipd.mtss;
 public class IntegerToRoman {
     public static String convert(int number) {
 
-        String[] centinaia = {"","C"};
-        String[] decine = {"","X","XX","XXX","XL","L"};
+        String[] centinaia = {"","C","CC","CCC","CD","D"};
+        String[] decine = {"","X","XX","XXX","XL","L","LX","LXX","LXXX","XC"};
         String[] unita = {"","I","II","III","IV","V","VI","VII","VIII","IX"};
 
 
