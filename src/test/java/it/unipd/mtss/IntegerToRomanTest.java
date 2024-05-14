@@ -44,4 +44,15 @@ public class IntegerToRomanTest {
         assertEquals("C", IntegerToRoman.convert(100));
     }
 
+    @Test
+    public void evalutePrimiCinquecento(){
+        assertEquals("CI", IntegerToRoman.convert(101));
+        assertEquals("CIV", IntegerToRoman.convert(104));
+        assertEquals("CXXXII", IntegerToRoman.convert(132));
+        assertEquals("CCXCIX", IntegerToRoman.convert(299));
+        assertEquals("CCCLXXVI", IntegerToRoman.convert(376));
+        assertEquals("CDLXVIII", IntegerToRoman.convert(468));
+        assertEquals("D", IntegerToRoman.convert(500));
+    }
+
 }
