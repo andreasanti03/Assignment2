@@ -109,6 +109,15 @@
           </execution>
         </executions>
       </plugin>
+      <plugin>
+        <groupId>com.github.hazendaz.maven</groupId>
+        <artifactId>coveralls-maven-plugin</artifactId>
+        <version>4.5.0-M2</version>
+        <configuration>
+          <!--suppress UnresolvedMavenProperty -->
+          <repoToken>${repotoken}</repoToken> <!-- mvn clean test jacoco:report coveralls:report -DrepoToken= -->
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>
