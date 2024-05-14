@@ -29,4 +29,16 @@ public class IntegerToRomanTest {
         assertEquals(variabileFive, IntegerToRoman.convert(5));
         assertEquals(variabileSix, IntegerToRoman.convert(6));
     }
+
+    @Test
+    public void evalutePrimiDieci(){
+        String variabileSeven = "VII";
+        String variabileEight = "VIII";
+        String variabileNine = "IX";
+        String variabileTen = "X";
+        assertEquals(variabileSeven, IntegerToRoman.convert(7));
+        assertEquals(variabileEight, IntegerToRoman.convert(8));
+        assertEquals(variabileNine, IntegerToRoman.convert(9));
+        assertEquals(variabileTen, IntegerToRoman.convert(10));
+    }
 }

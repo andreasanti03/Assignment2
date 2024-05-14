@@ -17,8 +17,16 @@ public class IntegerToRoman {
             return "IV";
         }else if (number == 5) {
             return "V";
-        }else{
+        }else if (number == 6) {
             return "VI";
+        }else if (number == 7) {
+            return "VII";
+        }else if (number == 8) {
+            return "VIII";
+        }else if (number == 9) {
+            return "IX";
+        }else {
+            return "X";
         }
     }
 }
