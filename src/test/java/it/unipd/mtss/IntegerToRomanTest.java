@@ -6,10 +6,16 @@
 package it.unipd.mtss;
 
 import org.junit.Test;
+import org.junit.Before;
 
 import static org.junit.Assert.assertEquals;
 
 public class IntegerToRomanTest {
+    @Before
+    public void checkZero(){
+        assertEquals("", IntegerToRoman.convert(0));
+    }
+
     @Test
     public void evalutePrimiCinquanta(){
         String variabileTwentuOne = "XXI";
