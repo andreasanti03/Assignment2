@@ -55,6 +55,26 @@ public class RomanPrinter {
         String[] m = M.split("\n");
         String out = "";
         char[] romanChar = romanNumber.toCharArray();
+        for(int j=0; j<5;j++){
+            for(int z=0; z<romanChar.length;z++){
+                if(romanChar[z]=='I'){
+                    out += i[j] + " ";
+                }else if(romanChar[z]=='V'){
+                    out += v[j] + " ";
+                }else if(romanChar[z]=='X'){
+                    out += x[j] + " ";
+                }else if(romanChar[z]=='L'){
+                    out += l[j] + " ";
+                }else if(romanChar[z]=='C'){
+                    out += c[j] + " ";
+                }else if(romanChar[z]=='D'){
+                    out += d[j] + " ";
+                }else{
+                    out += m[j] + " ";
+                }
+            }
+            out += "\n";
+        }
         return out;
     }
 }
