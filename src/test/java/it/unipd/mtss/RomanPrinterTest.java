@@ -53,4 +53,32 @@ public class RomanPrinterTest {
         assertEquals(var5, RomanPrinter.print(5));
         assertEquals(var6, RomanPrinter.print(6));
     }
+
+    @Test
+    public void checkPrintPrimiDieci(){
+        String var7 = "__     _____ ___ \n" +
+                "\\ \\   / /_ _|_ _|\n" +
+                " \\ \\ / / | | | | \n" +
+                "  \\ V /  | | | | \n" +
+                "   \\_/  |___|___|\n";
+        String var8 = "__     _____ ___ ___ \n" +
+                "\\ \\   / /_ _|_ _|_ _|\n" +
+                " \\ \\ / / | | | | | | \n" +
+                "  \\ V /  | | | | | | \n" +
+                "   \\_/  |___|___|___|\n";
+        String var9 = "_____  __\n" +
+                "|_ _\\ \\/ /\n" +
+                " | | \\  / \n" +
+                " | | /  \\ \n" +
+                "|___/_/\\_\\\n";
+        String var10 = "__  __\n" +
+                "\\ \\/ /\n" +
+                " \\  / \n" +
+                " /  \\ \n" +
+                "/_/\\_\\\n";
+        assertEquals(var7, RomanPrinter.print(7));
+        assertEquals(var8, RomanPrinter.print(8));
+        assertEquals(var9, RomanPrinter.print(9));
+        assertEquals(var10, RomanPrinter.print(10));
+    }
 }
