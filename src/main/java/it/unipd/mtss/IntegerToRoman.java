@@ -34,7 +34,7 @@ public class IntegerToRoman {
         } else if (input.length == 2) {
             posdecine = input[0] - '0';
             posunita = input[1] - '0';
-        } else if (input.length == 1) {
+        } else {
             posunita = input[0] - '0';
         }
 
