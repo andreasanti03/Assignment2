@@ -31,4 +31,26 @@ public class RomanPrinterTest {
         assertEquals(var2, RomanPrinter.print(2));
         assertEquals(var3, RomanPrinter.print(3));
     }
+
+    @Test
+    public void checkPrintPrimiSei(){
+        String var4 = " _____     __\n" +
+                "|_ _\\ \\   / /\n" +
+                " | | \\ \\ / / \n" +
+                " | |  \\ V /  \n" +
+                "|___|  \\_/   \n";
+        String var5 = "__     __\n" +
+                "\\ \\   / /\n" +
+                " \\ \\ / / \n" +
+                "  \\ V /  \n" +
+                "   \\_/   \n";
+        String var6 = "__     _____ \n" +
+                "\\ \\   / /_ _|\n" +
+                " \\ \\ / / | | \n" +
+                "  \\ V /  | | \n" +
+                "   \\_/  |___|\n";
+        assertEquals(var4, RomanPrinter.print(4));
+        assertEquals(var5, RomanPrinter.print(5));
+        assertEquals(var6, RomanPrinter.print(6));
+    }
 }
