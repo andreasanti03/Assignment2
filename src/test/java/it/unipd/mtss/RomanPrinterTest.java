@@ -10,7 +10,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class RomanPrinterTest {
-    @Test
+    @Before
     public void checkPrintZero(){
         String var0 = "\n" +
                 "\n" +
