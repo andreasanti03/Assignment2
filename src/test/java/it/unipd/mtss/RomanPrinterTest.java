@@ -4,11 +4,22 @@
 ////////////////////////////////////////////////////////////////////
 package it.unipd.mtss;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class RomanPrinterTest {
+    @Test
+    public void checkPrintZero(){
+        String var0 = "\n" +
+                "\n" +
+                "\n" +
+                "\n" +
+                "\n";
+        assertEquals(var0, RomanPrinter.print(0));
+    }
+
     @Test
     public void checkPrintPrimiTre(){
         String var1 = " ___  \n" +
